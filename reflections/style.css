@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  position: relative;
+}
+body {
+  background-color: #000000;
+}
+
+section {
+  display: block;
+}
+
+.section {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.background {
+  display: block;
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  width: 75%;
+  height: 100%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(130,130,130,1) 0%, rgba(38,38,38,1) 38%, rgba(0,0,0,1) 61%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828282', endColorstr='#000000', GradientType=1 );
+}
+
+.bottom {
+  z-index: 2;
+  overflow: hidden;
+}
+
+.bottom::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 18%, rgba(245,245,245,1) 52%, rgba(255,255,255,1) 90%, rgba(0,0,0,1) 100%);
+  z-index: 1;
+}
+
+.planets {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid #fff;
+  display: block;
+  border-radius: 50%;
+  /*overflow: hidden;*/
+  z-index: 2;
+}
+
+.planet-1 {
+  width: 25px;
+  height: 25px;
+  top: 25px;
+  left: 50%;
+}
+
+.planet-2 {
+  width: 75px;
+  height: 75px;
+  top: 100px;
+  left: -50%;
+  position: relative;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  transform: rotate(90deg);
+}
+
+.planet-2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -10px;
+  z-index: 4;
+  left: 17px;
+  width: 45px;
+  height: 45px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: .7;
+}
+
+.planet-2::before{
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -8px;
+  z-index: 4;
+  left: -10px;
+  top: 65px;
+  width: 75px;
+  height: 75px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: .5;
+}
+
+.planet-3 {
+  width: 50px;
+  height: 50px;
+  top: 285px;
+  left: 40%;
+  border-bottom: 0;
+  border-right: 0;
+  transform: rotate(90deg);
+}
+
+.planet-4 {
+  width: 115px;
+  height: 115px;
+  top: 310px;
+  left: 40%;
+  border-bottom: 0;
+  border-left: 0;
+  transform: rotate(-45deg);
+}

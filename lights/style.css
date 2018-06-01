@@ -1,0 +1,156 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #211f20;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  background-color: #335054;
+}
+
+.line-1 {
+  left: 180px;
+  height: 270px;
+}
+
+.line-2 {
+  left: 244px;
+  height: 290px;
+}
+
+.line-3 {
+  left: 325px;
+  height: 230px;
+}
+
+.line-4 {
+  left: 390px;
+  height: 400px;
+}
+
+.line-5 {
+  left: 440px;
+  height: 190px;
+}
+
+.base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(7px);
+  width: 5px;
+  height: 5px;
+  border: 2px solid #335054;
+}
+
+.base::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #335054;
+  border-radius: 3px;
+}
+
+.bulb {
+  position: absolute;
+  bottom: -25px;
+  left: -3px;
+  /*left: 50%;
+  transform: translateX(-50%);*/
+}
+
+.bulb::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  bottom: -45px;
+  width: 35px;
+  height: 40px;
+  border-radius: 50%;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.bulb::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 8px;
+  height: 6px;
+}
+
+.filament {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 2px;
+  height: 25px;
+}
+
+.filament-left {
+  transform: rotate(18deg);
+}
+
+.filament-right {
+  left: 9px;
+  transform: rotate(-18deg);
+}
+
+
+.bar {
+  width: 3px;
+  height: 2px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: -2px;
+  z-index: 1;
+  border: 1px solid white;
+  border-top: none;
+}
+
+.bar::before {
+  content: '';
+  width: 3px;
+  height: 2px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  z-index: 1;
+  border: 1px solid white;
+  border-top: none;
+}
+
+.bar::after {
+  content: '';
+  width: 3px;
+  height: 2px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  z-index: 1;
+  border: 1px solid white;
+  border-top: none;
+}

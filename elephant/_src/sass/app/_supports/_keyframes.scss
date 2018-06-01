@@ -1,0 +1,66 @@
+// ================================
+// Keyframes
+// ================================
+
+// @keyframes frame-name {
+//  0%,
+//  100% {
+//    opacity: 0;
+//    visibility: hidden;
+//    transform: translateY(-20px);
+//  }
+//  40%,
+//  60% {
+//    opacity: 1;
+//    visibility: visible;
+//    transform: translateY(0);
+//  }
+// }
+
+@keyframes wind1 {
+ 0% {
+   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+ }
+
+ 50% {
+   -webkit-clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+ }
+
+ 100% {
+   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+ }
+}
+
+@keyframes wind2 {
+  0% {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  50% {
+    -webkit-clip-path: polygon(76% 40%, 0% 100%, 100% 100%);
+    clip-path: polygon(76% 40%, 0% 100%, 100% 100%);
+  }
+
+  100% {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}
+
+@keyframes foot1 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

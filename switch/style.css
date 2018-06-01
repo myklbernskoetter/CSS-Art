@@ -1,0 +1,88 @@
+html,
+body {
+}
+
+body {
+  background-color: #fc0114;
+}
+
+.joycons {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  transform: translateX(-50%) translateY(-75%);
+  width: 275px;
+}
+
+.joycon {
+  position: absolute;
+  display: block;
+  border: 16px solid white;
+  width: 120px;
+  height: 275px;
+}
+
+.joycon::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+
+.joycon-left {
+  left: -30px;
+  border-radius: 55px 0 0 55px;
+  animation: bounce .2s forwards;
+  animation-delay: .31s;
+  transform: translateX(-50%) translateY(0);
+}
+
+.joycon-left::before {
+  top: 25px;
+  background-color: #ffffff;
+}
+
+.joycon-right {
+  right: -30px;
+  border-radius: 0 55px 55px 0;
+  background-color: #ffffff;
+  transform: translateX(-50%) translateY(-100%);
+  animation: snap .5s ease-in forwards;
+}
+
+.joycon-right::before {
+  bottom: 85px;
+  background-color: #fc0114;
+}
+
+@keyframes snap {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+  }
+
+  80% {
+    transform: translateX(-50%) translateY(15%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(15%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}

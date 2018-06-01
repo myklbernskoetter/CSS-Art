@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: #e4f436;
+  border-radius: 50%;
+}
+
+.horizon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  background-color: #000;
+  z-index: 1;
+}
+
+.reflections {
+  position: absolute;
+  bottom: 35%;
+  width: 400px;
+  height: 25px;
+  z-index: 2;
+}
+
+.reflection {
+  position: absolute;
+  width: 100px;
+  height: 8px;
+  background: #f4be36;
+}
+
+.reflection::before,
+.reflection::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #e4f436;
+  width: 8px;
+  height: 8px;
+}
+
+.reflection-1 {
+  left: 0;
+}
+
+.reflection-1::before {
+  right: 115px;
+}
+.reflection-1::after {
+  right: 140px;
+}
+
+.reflection-2 {
+  right: 0;
+  top: -10px;
+}
+.reflection-2::before {
+  right: -25px;
+}
+.reflection-2::after {
+  right: -50px;
+}
+
+.reflection-3 {
+  bottom: -25%;
+  right: 15%;
+}
+
+.reflection-3::before {
+  right: -25px;
+}
+.reflection-3::after {
+  display: none;
+}

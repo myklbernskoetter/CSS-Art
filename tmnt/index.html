@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>css tmnt</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script>
+    window.config = window.config || {};
+    window.dataLayer = [];
+  </script>
+
+  <script src="https://www.bugherd.com/sidebarv2.js?apikey={{ id }}" async defer></script>
+</head>
+
+<body>
+  <main id="main-content">
+
+    <div class="canister-wrapper">
+      <div class="cap cap1">
+        <span class="window"></span>
+      </div>
+      <div class="cap cap2">
+        <span class="window"></span>
+      </div>
+
+      <div class="canister">
+        <span class="lettering">TCRI</span>
+        <div class="box">
+          <svg>
+            <defs>
+              <filter id="goo2">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+                <feComposite in="SourceGraphic" in2="gooey" operator="atop"/>
+              </filter>
+            </defs>
+          </svg>
+          <div class="liquid liquid-1"></div>
+          <div class="liquid liquid-2"></div>
+          <div class="liquid liquid-3"></div>
+          <div class="liquid liquid-4"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

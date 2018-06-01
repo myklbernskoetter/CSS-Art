@@ -1,0 +1,111 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  overflow: hidden;
+}
+
+.bird {
+  position: absolute;
+  right: -50px;
+  bottom: 150px;
+  width: 650px;
+  height: 600px;
+  background-color: #1f100d;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.eye {
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.beak {
+  position: absolute;
+  bottom: 400px;
+  right: 800px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 180px 75px 0;
+  border-color: transparent #b7832c transparent transparent;
+  z-index: 1;
+  transform: translateX(224px) translateY(-50px) rotate(12deg);
+}
+
+.wing {
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  width: 195px;
+  height: 165px;
+  border-radius: 50%;
+  background-color: #3d1e1c;
+  transform: rotate(25deg);
+}
+
+.legs {
+  display: block;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+}
+
+.leg {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 150px;
+  background-color: #b7832c;
+}
+
+.right-leg {
+  right: 25px;
+  transform: rotate(-13deg);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.right-leg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 55px;
+  top: -13px;
+  left: -20px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25%;
+}
+
+.left-leg {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.left-leg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 55px;
+  top: -13px;
+  left: -18px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25%;
+}

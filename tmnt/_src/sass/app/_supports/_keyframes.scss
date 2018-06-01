@@ -1,0 +1,28 @@
+// ================================
+// Keyframes
+// ================================
+
+// @keyframes frame-name {
+//  0%,
+//  100% {
+//    opacity: 0;
+//    visibility: hidden;
+//    transform: translateY(-20px);
+//  }
+//  40%,
+//  60% {
+//    opacity: 1;
+//    visibility: visible;
+//    transform: translateY(0);
+//  }
+// }
+
+@keyframes drip-drip {
+	0% {
+		transform: translateY(200%) translateX(-50%);
+	}
+
+	100% {
+		transform: translateY(-200%) translateX(-50%);
+	}
+}

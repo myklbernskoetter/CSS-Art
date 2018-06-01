@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9cb1d2;
+}
+
+.sun {
+  width: 300px;
+  height: 300px;
+  background-color: #c96265;
+  border-radius: 50%;
+}
+
+.horizons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: #7c94b9;
+  overflow: hidden;
+}
+
+.horizon {
+  display: block;
+  width: 150%;
+  height: 100%;
+  overflow: hidden;
+  }
+
+.horizon-1 {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  background-color: #546a96;
+  transform: rotate(-2deg);
+}
+
+.horizon-2 {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  background-color: #4e5c87;
+  transform: rotate(1deg);
+}
+
+.horizon-3 {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  background-color: #535077;
+  transform: rotate(-2deg);
+}
+
+.reflection {
+  position: absolute;
+  top: -25px;
+  left: 41%;
+  width: 300px;
+  height: 100%;
+  transform: rotate(4deg);
+  background-color: #8e86a7;
+}
+
+.reflection::after {
+  position: absolute;
+  right: -25px;
+  content: '';
+  display: block;
+  width: 400px;
+  height: 100%;
+  background-color: inherit;
+  transform: rotate(-10deg);
+}
+
+.reflection-1 {
+  position: absolute;
+  top: -25px;
+  left: 17%;
+  width: 500px;
+  height: 100%;
+  transform: rotate(8deg);
+  background-color: #806083;
+}
+
+.reflection-1::after {
+  position: absolute;
+  top: -20px;
+  right: -50px;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100%;
+  background-color: inherit;
+  transform: rotate(-16deg);
+}
+
+.reflection-2 {
+  position: absolute;
+  top: -25px;
+  left: 13%;
+  width: 600px;
+  height: 100%;
+  transform: rotate(4deg);
+  background-color: #694e81;
+}
+
+.reflection-2::after {
+  position: absolute;
+  right: -50px;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100%;
+  background-color: inherit;
+  transform: rotate(-16deg);
+}
+
+.reflection-3 {
+  position: absolute;
+  top: -75px;
+  left: 10%;
+  width: 700px;
+  height: 200%;
+  transform: rotate(13deg);
+  background-color: #7a416d;
+}
+
+.reflection-3::after {
+  position: absolute;
+  right: -75px;
+  top: -47px;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100%;
+  background-color: inherit;
+  transform: rotate(-30deg);
+}

@@ -1,0 +1,164 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a1c3b0;
+  overflow: hidden;
+}
+
+.crossbars {
+  position: absolute;
+  bottom: 145px;
+  display: block;
+  height: 20px;
+}
+
+.crossbars::before,
+.crossbars::after {
+  display: block;
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: #3e2616;
+}
+
+.crossbars::before {
+  top: -10px;
+  margin-bottom: 20px;
+}
+
+.crossbars::after {
+  bottom: -10px;
+}
+
+.bars-1 {
+  /*bottom: 20%;*/
+  left: 14%;
+  z-index: 2;
+  transform: rotate(7deg);
+
+}
+
+.bars-2 {
+  /*bottom: 20%;*/
+  right: 19%;
+  z-index: 2;
+  transform: rotate(7deg);
+}
+
+.pole {
+  position: absolute;
+  bottom: -18px;
+  background-color: #3e2616;
+  width: 15px;
+  height: 200px;
+  z-index: 2;
+}
+
+.pole-1 {
+  left: 15%;
+}
+
+.pole-1::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  display: block;
+  width: 6px;
+  height: 100%;
+  transform: rotate(1deg);
+  background-color: #a1c3b0;
+}
+
+.pole-2 {
+  right: 20%;
+}
+
+.pole-2::before {
+  content: '';
+  position: absolute;
+  right: -4px;
+  display: block;
+  width: 6px;
+  height: 100%;
+  transform: rotate(-1deg);
+  background-color: #a1c3b0;
+}
+
+.line {
+  position: absolute;
+  left: 16.5%;
+  bottom: 81px;
+  border-bottom: 1px solid #000;
+  border-radius: 50%;
+  width: 62%;
+  height: 125px;
+  z-index: 3;
+}
+
+.line-2 {
+  bottom: 66px;
+  left: 14%;
+  height: 140px;
+  width: 66.5%;
+}
+
+.line-3 {
+  height: 95px;
+  bottom: 119px;
+  left: 16.5%;
+}
+
+.line-4 {
+  width: 66.5%;
+  bottom: 100px;
+  left: 14.5%;
+}
+
+.line-5 {
+  left: -48%;
+}
+
+.line-6 {
+  bottom: 62px;
+  left: -49.5%;
+  height: 140px;
+  width: 66.5%;
+}
+
+.line-7 {
+  left: -45%;
+  bottom: 102px;
+}
+
+.line-8 {
+  left: -47.5%;
+  bottom: 110px;
+}
+
+
+.line-9 {
+  left: 80%;
+}
+
+.line-10 {
+  bottom: 72px;
+  left: 78%;
+  height: 140px;
+  width: 66.5%;
+}
+
+.line-11 {
+  left: 78%;
+  bottom: 103px;
+}
+
+.line-12 {
+  left: 80.5%;
+  bottom: 96px;
+}

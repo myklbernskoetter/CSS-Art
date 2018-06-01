@@ -1,0 +1,201 @@
+body {
+  background-color: #9e977b;
+}
+
+.screen {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
+  height: 225px;
+  background-color: #3d3d3d;
+  border: 25px solid #c8bfa2;
+}
+
+.screen-text {
+  display: block;
+  padding: 10px;
+  color: #7FFF00;
+  letter-spacing: 2px;
+}
+
+.indicator {
+  animation: blink 1s infinite;
+}
+
+.neck {
+  display: block;
+  position: absolute;
+  bottom: 285px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 185px;
+  height: 15px;
+  background-color: #d6cfb5;
+}
+
+.tower {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 250px;
+  height: 85px;
+  background-color: #fff;
+}
+
+
+.floppy-drive {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.divit {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #bfb196;
+  z-index: 0;
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: block;
+  width: 75px;
+  height: 25px;
+  background-color: #9f9176;
+}
+
+.keyboard {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 200px;
+  left: 50%;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.key {
+  width: 15px;
+  height: 10px;
+  background-color: #d9d2b8;
+}
+
+.key.gray {
+  background-color: #3d3d3d;
+}
+
+.front {
+  display: block;
+  position: absolute;
+  top: 18px;
+  width: 290px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.front::before,
+.front::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 290px;
+  height: 10px;
+  background-color: #ccc3a6;
+}
+
+.front::before {
+  top: -10px;
+}
+
+.front::after {
+  bottom: -10px;
+}
+
+.shadows {
+  position: absolute;
+  bottom: 175px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.keyboard-shadow {
+  bottom: 200px;
+  display: block;
+  width: 300px;
+  height: 4px;
+  transform: skew(2deg);
+  background-color: #868068;
+}
+
+.tower-shadow {
+  position: absolute;
+  bottom: -15px;
+  left: 15%;
+  transform: translateX(-50%);
+  display: block;
+  width: 200px;
+  height: 15px;
+  transform: skew(2deg);
+  background-color: #868068;
+}
+
+.neck-shadow {
+  position: absolute;
+  bottom: -17px;
+  left: 30%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100px;
+  height: 2px;
+  transform: skew(2deg);
+  background-color: #868068;
+}
+
+.screen-shadow {
+  position: absolute;
+  bottom: -117px;
+  left: -50px;
+  transform: translateX(-50%);
+  display: block;
+  width: 375px;
+  height: 100px;
+  transform: skew(-10deg);
+  background-color: #868068;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
