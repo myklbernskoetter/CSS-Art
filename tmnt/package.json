@@ -36,6 +36,6 @@
     "imagemin-cli": "^2.1.0",
     "morgan": "~1.7.0",
     "parallelshell": "^2.0.0",
-    "svg-sprite": "^1.2.19"
+    "svg-sprite": "^1.5.4"
   }
 }
